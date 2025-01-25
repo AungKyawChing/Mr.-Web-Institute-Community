@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<div class="form-container">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="status">Status:</label>
+  <select id="status" name="status">
+    <option value="active">Active</option>
+    <option value="inactive">Inactive</option>
+  </select><br><br>
+
+  <label>Click on one of your favorite Programming Languages:</label>
+  <div class="radio-group">
+    <input type="radio" id="javascript" name="language" value="javascript">
+    <label for="javascript">JAVASCRIPT</label>
+
+    <input type="radio" id="python" name="language" value="python">
+    <label for="python">PYTHON</label>
+
+    <input type="radio" id="php" name="language" value="php">
+    <label for="php">PHP</label>
+  </div><br>
+
+  <label>Click your Education Qualification:</label>
+  <div class="checkbox-group">
+    <input type="checkbox" id="ssc" name="qualification" value="ssc">
+    <label for="ssc">SSC</label>
+
+    <input type="checkbox" id="hsc" name="qualification" value="hsc">
+    <label for="hsc">HSC</label>
+
+    <input type="checkbox" id="honours" name="qualification" value="honours">
+    <label for="honours">HONOURS</label>
+  </div><br>
+
+  <button type="submit" >Submit</button>
+</div>
+
+<h2>Her You Can See Top Popular Programming Languages</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Programming Language</th>
+      <th>Year Created</th>
+      <th>Designed By</th>
+      <th>Primary Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C++</td>
+      <td>1985</td>
+      <td>Bjarne Stroustrup</td>
+      <td>System programming, game development</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>1995</td>
+      <td>Brendan Eich</td>
+      <td>Web development, frontend, backend</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>1991</td>
+      <td>Guido van Rossum</td>
+      <td>Data science, web development, scripting</td>
+    </tr>
+    <tr>
+      <td>PHP</td>
+      <td>1995</td>
+      <td>Rasmus Lerdorf</td>
+      <td>Web development (backend)</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

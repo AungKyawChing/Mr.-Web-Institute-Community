@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select{
+  width: 100%;
+}
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin: -8px 3px 0 30px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
