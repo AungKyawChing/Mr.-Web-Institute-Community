@@ -1,0 +1,249 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    background: #000;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav .fa-bars {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.texts h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.texts h1 span {
+    font-style: italic;
+}
+
+.texts p {
+    color: #aaa;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons button:first-child {
+    background: #ff6b6b;
+    color: white;
+}
+
+.buttons button:last-child {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.man {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.man img {
+    max-width: 100%;
+    height: auto;
+}
+
+.freeWorkoutVideos {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    backdrop-filter: blur(5px);
+}
+
+.freeWorkoutVideos:first-of-type {
+    top: 10%;
+    right: 0;
+}
+
+.freeWorkoutVideos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.freeWorkoutVideos p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.fa-play {
+
+    color: white;
+    background-color: #ff6b6b;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.videoTutorial {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    bottom: 20%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.videoTutorial .text {
+    color: #fff;
+}
+
+.videoTutorial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.videoTutorial p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Medium Screen Styles */
+@media (min-width: 768px) {
+    nav .fa-bars {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav ul li {
+        cursor: pointer;
+    }
+
+    nav ul li:first-child {
+        color: #ff6b6b;
+    }
+
+    .texts h1 {
+        font-size: 3rem;
+    }
+
+    .man {
+        margin-top: 3rem;
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1024px) {
+    header {
+        padding: 1.5rem 5%;
+    }
+
+    main {
+        padding: 2rem 5%;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .texts {
+        flex: 1;
+    }
+
+    .texts h1 {
+        font-size: 4rem;
+    }
+
+    .man {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .freeWorkoutVideos:first-of-type {
+        top: 15%;
+        right: -5%;
+    }
+
+    .videoTutorial {
+        bottom: 25%;
+        left: -5%;
+    }
+}
+
+/* Hover Effects */
+.buttons button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
